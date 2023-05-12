@@ -5,7 +5,15 @@
 
 version: 2
 updates:
-  - package-ecosystem: "maven,npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "docker"
+    directory: "/"
     schedule:
       interval: "daily"
