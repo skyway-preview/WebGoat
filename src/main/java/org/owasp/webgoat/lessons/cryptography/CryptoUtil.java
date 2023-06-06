@@ -43,7 +43,7 @@ public class CryptoUtil {
 
   public static String getPrivateKeyInPEM(KeyPair keyPair) {
     String encodedString = "-----BEGIN PRIVATE KEY-----\n";
-    encodedString =
+    encodedString = 
         encodedString
             + new String(
                 Base64.getEncoder().encode(keyPair.getPrivate().getEncoded()),
